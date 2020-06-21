@@ -1,0 +1,27 @@
+<app-header [name]="'Salarii in functie de post'"></app-header>
+<div *ngIf="route.children.length === 0">
+    <div [ngClass]="(selectareDomeniu)?'grid-container':''">
+        <div class="item1">
+            <div class="salary-post-container">
+                <table class="layout display responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Zone Lucru</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let domeniu of domenii; ">
+                            <td class="organisationnumber" (click)="vizualizareFunctii(domeniu)">
+                                {{ domeniu.nume }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="item2">
+            <app-functie *ngIf="selectareDomeniu" [domeniu]="domeniuSelectat"></app-functie>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

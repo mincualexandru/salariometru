@@ -1,0 +1,69 @@
+@import '../../../main-styles.scss';
+
+.detalii-salariu {
+    background-color: $white;
+    text-align: left;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0px 2px 15px 2px rgba(black, 0.068);
+
+    &:hover {
+        box-shadow: 0px 0px 0px 4px rgba(black, 0.068);
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    li {
+        font-size: 17px;
+    }
+    
+    .tip-taxa {
+        text-align: left;
+        width: 83%;
+    }
+
+    .valoare {
+        text-align: right;
+        width: 15%;
+    }
+
+    .tip-taxa, .valoare {
+        display: inline-block
+
+    }
+}
+
+// .start-informatii-aditionale {
+//     position: relative;
+// }
+
+// .start-informatii-aditionale .informatii-aditionale {
+//     visibility: hidden;
+//     font-size: 10px;
+//     font-style: oblique;
+//     color: gray;
+//     width: 20%;
+
+    
+
+//     /* Position the tooltip */
+//     position: absolute;
+//     z-index: 1;
+//     top: 20%;
+//     left: 50%;
+//     margin-left: -60px;
+// }
+
+// .start-informatii-aditionale:hover .informatii-aditionale {
+//     visibility: visible;
+// }
+
+// .detalii-grafic {
+//     margin-top: $margin-top;
+//     margin-bottom: $margin-bottom;
+// }

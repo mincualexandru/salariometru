@@ -1,0 +1,58 @@
+@import '../../../main-styles.scss';
+
+.center {
+    font-weight: bold;
+    margin: 25px;
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .main {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        
+        .interval {
+            background-color: #e0f5fc;
+            height: 225px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .linie {
+            width: 75%;
+            margin: 0 auto;
+            height: 35px;
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, blue));
+            position: relative;
+
+            .inceput-interval {
+                position: absolute;
+                top: 45px;
+                left: 5px;
+                height: 50px;
+                width: 71px;
+            
+            }
+
+            .text-interval {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, 103%);
+            }
+
+            .sfarsit-interval {
+                position: absolute;
+                top: 45px;
+                right: 6px;
+                height: 50px;
+                width: 71px;
+            }
+        }
+    
+    }
+}
+

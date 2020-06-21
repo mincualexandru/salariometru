@@ -1,0 +1,12 @@
+<app-header [name]="'Istoric Salarii Calculate'"></app-header>
+<div class="main-container">
+    <div class="notes-list">
+        <app-salary-card 
+        *ngFor="let salariu of salarii"
+        [salariuBrut]="salariu.salariuBrut"
+        [salariuNet]="salariu.salariuNet"
+        [asigurareSociala]="salariu.asigurareSociala"
+        [asigurareSanatate]="salariu.asigurareSanatate"
+        [impozitVenit]="salariu.impozitVenit"></app-salary-card>
+    </div>
+</div>

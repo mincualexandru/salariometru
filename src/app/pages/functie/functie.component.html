@@ -1,0 +1,20 @@
+<div class="salary-post-container">
+  <table class="layout display responsive-table">
+    <thead>
+      <tr>
+        <th>Nume Post</th>
+        <th>Interval Salariu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let functie of domeniu.functii; ">
+        <td class="organisationnumber">
+          <a [routerLink]="[domeniu.nume.toLowerCase(), modicareNumeFunctie(functie.nume)]">{{ functie.nume }}</a>
+        </td>
+        <td class="organisationnumber">
+          {{ functie.intervalSalariu.deLa }} - {{ functie.intervalSalariu.la }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

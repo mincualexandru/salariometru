@@ -1,0 +1,35 @@
+@import '../../../main-styles.scss';
+
+.salariu {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.disabled {
+    background-color: red;
+    color: white;
+}
+
+.non-disabled {
+    background-color: $green;
+}
+.center-btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .floating-add-button {
+        position: fixed;
+        bottom: 0;
+        width: 500px;
+        border-radius: 0;
+        
+        box-shadow: 0px 0px 15px 5px rgba($green, 0.2);
+        background: linear-gradient(90deg, rgba(0,255,209,1) 35%, rgba(103,210,238,1) 90%);
+        height: 68px;
+        font-size: 24px;
+    }
+}
+

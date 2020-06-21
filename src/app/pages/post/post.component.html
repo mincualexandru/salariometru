@@ -1,0 +1,19 @@
+<div class="center">
+    <h1>{{ functie.nume }}</h1>
+    <div class="main">
+        <div class="interval">
+            <p>Salariu mediu lunar net - Romania</p>
+            <div class="linie">
+                <div class="inceput-interval">{{ functie.intervalSalariu.deLa }} LEI</div>
+                <div class="text-interval">INTERVAL SALARIU</div>
+                <div class="sfarsit-interval">{{ functie.intervalSalariu.la }} LEI</div>
+            </div>
+        </div>
+        <div>
+            <p>Alte locuri de munca din aceelasi domeniu</p>
+            <ul *ngFor = "let functie of functii">
+                <li>{{ functie.nume }}</li>
+            </ul>
+        </div>
+    </div>
+</div>

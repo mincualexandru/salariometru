@@ -1,0 +1,206 @@
+{
+    "listaDomenii": [
+        {
+            "nume": "Administratie",
+            "functii": [
+                {
+                    "nume": "Agent pariuri",
+                    "intervalSalariu": {
+                        "deLa": 1478,
+                        "la": 2620
+                    },
+                    "experienta": 1
+                },
+                {
+                    "nume": "Arhivar administrator registratură",
+                    "intervalSalariu": {
+                        "deLa": 1634,
+                        "la": 3012
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Asistent manager",
+                    "intervalSalariu": {
+                        "deLa": 1755,
+                        "la": 3570 
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Coordonator proiecte",
+                    "intervalSalariu": {
+                        "deLa": 2032,
+                        "la": 6546 
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Funcționar introducere date",
+                    "intervalSalariu": {
+                        "deLa": 1573,
+                        "la": 3027 
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Office Manager",
+                    "intervalSalariu": {
+                        "deLa": 2011,
+                        "la": 5312 
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Operator calculator",
+                    "intervalSalariu": {
+                        "deLa": 1536,
+                        "la": 3171 
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Operator introducere date",
+                    "intervalSalariu": {
+                        "deLa": 1453,
+                        "la": 2963 
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Operator telefonic",
+                    "intervalSalariu": {
+                        "deLa": 1482,
+                        "la": 3164 
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Recepționer",
+                    "intervalSalariu": {
+                        "deLa": 1533,
+                        "la": 2685  
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Recepționer șef",
+                    "intervalSalariu": {
+                        "deLa": 1743,
+                        "la": 3089 
+                    },
+                    "experienta": 1
+                  },
+                  {
+                    "nume": "Secretară",
+                    "intervalSalariu": {
+                        "deLa": 1552,
+                        "la": 3151
+                    },
+                    "experienta": 1
+                  }
+            ]
+        },
+        {
+            "nume": "Comert",
+            "functii": [
+              {
+                "nume": "Account Manager",
+                "intervalSalariu": {
+                    "deLa": 1.742 ,
+                    "la": 4.180 
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Administrator magazin online",
+                "intervalSalariu": {
+                    "deLa": 1.600 ,
+                    "la": 4.262 
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Agent Vânzări",
+                "intervalSalariu": {
+                    "deLa": 1.545 ,
+                    "la": 3.869  
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Agent de achiziții",
+                "intervalSalariu": {
+                    "deLa": 2.113 ,
+                    "la": 4.602  
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Agent de vânzări auto",
+                "intervalSalariu": {
+                    "deLa": 1.646 ,
+                    "la": 3.525  
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Asistent comercial",
+                "intervalSalariu": {
+                    "deLa": 1.535,
+                    "la": 3.258  
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Asistent promoții",
+                "intervalSalariu": {
+                    "deLa": 1.200 ,
+                    "la": 2.682  
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Business Analyst",
+                "intervalSalariu": {
+                    "deLa": 2.408 ,
+                    "la": 4.452  
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Casier",
+                "intervalSalariu": {
+                    "deLa": 1.294 ,
+                    "la": 3.047  
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Consultant vânzări",
+                "intervalSalariu": {
+                    "deLa": 1.461 ,
+                    "la": 3.421   
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Coordonator comercial",
+                "intervalSalariu": {
+                    "deLa": 1.893 ,
+                    "la": 4.932  
+                },
+                "experienta": 1
+              },
+              {
+                "nume": "Director adjunct magazin",
+                "intervalSalariu": {
+                    "deLa": 1.890 ,
+                    "la": 4.009 
+                },
+                "experienta": 1
+              }
+            ]
+          }
+    ]
+}

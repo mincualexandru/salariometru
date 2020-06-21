@@ -1,0 +1,114 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6 mx-auto detalii-salariu">
+            <div>
+                <h4>
+                    <div class="tip-taxa">
+                        Retineri salariat
+                    </div>
+                    <div class="valoare">
+                        lei
+                    </div>
+                </h4>
+                <ul>
+                    <li>
+                        <div class="tip-taxa">
+                            CAS 25% (asigurare sociala)
+                        </div>
+                        <div class="valoare">
+                            {{ salariu.asigurareSociala }}
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="tip-taxa">
+                            CASS 10% (asigurare sanatate)
+                        </div>
+                        <div class="valoare">
+                            {{ salariu.asigurareSanatate }}
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="tip-taxa">
+                            DP (deducere personala)
+                        </div>
+                        <div class="valoare">
+                            {{ salariu.deducerePersonala }}
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="tip-taxa">
+                            IV 10% (impozit pe venit)
+                        </div>
+                        <div class="valoare">
+                        {{ salariu.impozitVenit }}
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Retineri angajator</h4>
+                <ul>
+                    <li>
+                        <div class="tip-taxa">
+                            CAM 2.25% (asigurare munca)
+                        </div>
+                        <div class="valoare">
+                            {{ salariu.asigurareMunca }}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Total taxe</h4>
+                <ul>
+                    <li>
+                        <div class="tip-taxa">
+                            Angajatul plateste statului
+                        </div>
+                        <div class="valoare">
+                            {{ taxeAngajat }}
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tip-taxa">
+                            Angajatorul plateste statului
+                        </div>
+                        <div class="valoare">
+                            {{ taxeAngajator }}
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>
+                    <div class="tip-taxa start-informatii-aditionale">
+                        Salariu net
+                        <!-- <div class="informatii-aditionale">
+                            Suma salariului net, a contributiilor individuale si datorate de catre angajator si a impozitului datorate pentru veniturile din salarii
+                        </div> -->
+                    </div>
+                    <div class="valoare">
+                        {{ salariu.salariuNet }}
+                    </div> 
+                    <div class="tip-taxa start-informatii-aditionale">
+                        Salariu complet
+                        <!-- <div class="informatii-aditionale">
+                            Suma salariului net, a contributiilor individuale si datorate de catre angajator si a impozitului datorate pentru veniturile din salarii
+                        </div> -->
+                    </div>
+                    <div class="valoare">
+                        {{ salariu.salariuComplet }}
+                    </div> 
+                </h4>
+            </div>
+            
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 mx-auto detalii-grafic">
+            <div id="chartContainer" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+		</div>
+	</div>
+</div>

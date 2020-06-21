@@ -1,0 +1,55 @@
+<app-header [name]="'Calculator Salariu Net'"></app-header>
+<div class="salariu">
+    <form #formSalariu="ngForm">
+        <div *ngIf="!formSalariu.submitted">
+            <div class="form-group">
+                <label>Salariu Brut</label>
+                <input 
+                class="form-control" 
+                name="salariu" 
+                [ngModel]="salariu" 
+                [ngStyle]="(formSalariu.touched) && { 'border': '1px solid red' }"
+                type="number" 
+                placeholder="Salariu..."
+                required />
+            </div>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input 
+                    class="form-check-input" 
+                    #salveazaOptiuneImpozit 
+                    type="checkbox" 
+                    [checked]="scutitDeImpozit"
+                    (change)="salveazaOptiuneImpzoit(salveazaOptiuneImpozit.checked)">
+                    <label class="form-check-label">
+                        Scutit Impozit
+                    </label>
+                  </div>
+            </div>
+            <div class="form-group">
+                <label>Deducere Personala</label>
+                <select class="form-control"
+                    name="numarPersoaneIntretinere"
+                    [(ngModel)]="persoanaDefault">
+                    <option 
+                    *ngFor="let persoana of persoaneIntretinere" 
+                    [value]="persoana.id"
+                    >{{ persoana.label }}
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button 
+                class="form-control" 
+                type="button" 
+                [disabled]="!formSalariu.valid"
+                [ngClass]="(!formSalariu.valid && formSalariu.touched)?'disabled':'non-disabled'"
+                (click)="transmiteSalariu(formSalariu)"
+                >{{ !formSalariu.valid && formSalariu.touched ? 'Date Invalide' : 'Calculeaza' }}</button>
+            </div>
+        </div>
+    </form>
+    <div class="center-btn">
+        <button class="floating-add-button" routerLink="istoric-salarii">Istoric salarii calculate</button>
+    </div>
+</div>
